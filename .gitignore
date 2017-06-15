@@ -15,3 +15,6 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# these are not for your eyes
+/config/secrets.yml
