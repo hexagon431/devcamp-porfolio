@@ -10,8 +10,8 @@
 
 ### Code Example
 ```ruby
-def mwee
-  puts "chaika"
+def chaika
+  puts "mwee"
 end
 ```
 
