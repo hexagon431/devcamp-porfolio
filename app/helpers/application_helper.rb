@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greet, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    HexagonalViewTool::Renderer.copyright 'Weston Kitchen', 'All rights reserved'
+  end
 end
