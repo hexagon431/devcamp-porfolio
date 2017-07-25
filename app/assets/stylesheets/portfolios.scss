@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "jquery-ui";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -59,15 +60,8 @@ footer p {
   margin-bottom: .25rem;
 }
 
-//.bg-inverse {
- //   background-color: #292b2c!important;
-//}
-
-//.navbar-inverse .navbar-toggler-icon {
-//    background-image: url(https://www.shareicon.net/download/2016/11/14/852142_down.svg);
-//}
-
 /* Custom styles */
+
 .portfolio-form {
   padding: 20px;
 }
