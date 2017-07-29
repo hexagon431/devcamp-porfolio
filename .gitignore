@@ -18,3 +18,4 @@
 
 # these are not for your eyes
 /config/secrets.yml
+.env
