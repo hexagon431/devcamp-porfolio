@@ -36,7 +36,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Your post is now live.' }
+        format.html { redirect_to @blog, notice: 'Post created.' }
       else
         format.html { render :new }
       end
@@ -48,7 +48,7 @@ class BlogsController < ApplicationController
   def update
     respond_to do |format|
       if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
+        format.html { redirect_to @blog, notice: 'Blog post updated.' }
       else
         format.html { render :edit }
       end
@@ -60,7 +60,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
+      format.html { redirect_to blogs_url, notice: 'Post deleted.' }
       format.json { head :no_content }
     end
   end
@@ -72,7 +72,7 @@ class BlogsController < ApplicationController
       @blog.draft!
     end
         
-    redirect_to blogs_url, notice: 'Post status has been updated.'
+    redirect_to blogs_url, notice: 'Post status updated.'
   end
 
   private

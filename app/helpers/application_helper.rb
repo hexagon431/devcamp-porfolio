@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    HexagonalViewTool::Renderer.copyright 'Weston', 'All rights reserved'
+    HexagonalViewTool::Renderer.copyright 'Weston Kitchen', 'All rights reserved'
   end
 
   def nav_items
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Weston Portfolio", sticky: false)
+    js add_gritter(msg, title: "Notice me senpai!", sticky: false)
   end
 
 end
